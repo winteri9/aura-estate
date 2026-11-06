@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aura Estate · недвижимость в Москве</title>
+  <meta name="description" content="Закрытый каталог квартир, пентхаусов и загородных домов в Москве. Проверка документов, торг и сопровождение сделки.">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Aura Estate">
+  <meta property="og:title" content="Aura Estate · недвижимость в Москве">
+  <meta property="og:description" content="Закрытый каталог квартир, пентхаусов и загородных домов. Юрист проверяет объект до показа, гонорар известен заранее.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/prata-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/golos-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');setTimeout(function(){document.documentElement.classList.add('is-ready')},2500)</script>
+</head>
+<body>
+  <a class="skip" href="#main">К содержанию</a>
+
+  <header class="hdr surface-paper" id="top">
+    <div class="hdr__in container">
+      <a class="brand" href="#top" aria-label="Aura Estate, на главную">
+        <svg class="brand__mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.2" opacity=".3"/>
+          <circle cx="12" cy="12" r="5.25" stroke="currentColor" stroke-width="1.2" opacity=".6"/>
+          <circle cx="12" cy="12" r="1.5" fill="currentColor"/>
+        </svg>
+        <span class="brand__word">Aura Estate</span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#approach">Подход</a>
+        <a href="#services">Услуги</a>
+        <a href="#request">Заявка</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="hdr__side">
+        <a class="hdr__tel num" href="tel:+74951204090">+7 495 120-40-90</a>
+        <a class="btn btn--sm hdr__cta" href="#request">Оставить заявку</a>
+      </div>
+
+      <button class="burger" id="menu-open" type="button" aria-expanded="false" aria-controls="menu" aria-label="Открыть меню">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu surface-ink" id="menu" inert>
+    <div class="menu__in container">
+      <div class="menu__top">
+        <span class="menu__label num">Меню</span>
+        <button class="menu__close" id="menu-close" type="button" aria-label="Закрыть меню">
+          <span></span><span></span>
+        </button>
+      </div>
+      <nav class="menu__nav" aria-label="Мобильная навигация">
+        <a href="#approach">Подход</a>
+        <a href="#services">Услуги</a>
+        <a href="#request">Заявка</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <div class="menu__foot">
+        <a class="menu__tel num" href="tel:+74951204090">+7 495 120-40-90</a>
+        <a class="menu__mail num" href="mailto:hello@aura-estate.ru">hello@aura-estate.ru</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="hero surface-paper" aria-labelledby="hero-title">
+      <div class="hero__grid container">
+        <div class="hero__copy">
+          <p class="kicker"><span class="dot" aria-hidden="true"></span>Агентство недвижимости · Москва</p>
+
+          <h1 class="hero__title display" id="hero-title">
+            <span class="hero__line"><span>Дом, который</span></span>
+            <span class="hero__line"><span>держит цену<span class="pink">.</span></span></span>
+          </h1>
+
+          <p class="hero__lead">Закрытый каталог квартир, пентхаусов и домов в Москве и области. Показываем объекты, которые не попадают в открытую продажу, и проверяем документы до первого просмотра.</p>
+
+          <div class="hero__actions">
+            <a class="btn" href="#request" data-magnet>
+              Получить каталог
+              <svg class="btn__arrow" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M3 10h13M11 4.5 16.5 10 11 15.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/>
+              </svg>
+            </a>
+            <a class="link-arrow" href="#approach">
+              Как мы работаем
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M3 10h13M11 4.5 16.5 10 11 15.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/>
+              </svg>
+            </a>
+          </div>
+
+          <p class="hero__note">Пентхаусы, квартиры и загородные дома от 45 млн ₽. Гонорар фиксируем в договоре до показа.</p>
+        </div>
+
+        <figure class="plan" data-tilt>
+          <div class="plan__plate">
+            <svg class="plan__svg" viewBox="30 20 580 700" role="img" aria-label="План пентхауса на Пречистенке, 218 квадратных метров, четыре комнаты и терраса">
+              <g class="plan__rings">
+                <circle cx="320" cy="360" r="250"/>
+                <circle cx="320" cy="360" r="185"/>
+                <circle cx="320" cy="360" r="120"/>
+              </g>
+
+              <g class="plan__dim-line">
+                <path d="M90 52h460M90 45v14M550 45v14"/>
+                <path d="M56 90v520M49 90h14M49 610h14"/>
+              </g>
+              <text class="plan__dim" x="320" y="39" text-anchor="middle">12,4 М</text>
+              <text class="plan__dim" x="40" y="350" text-anchor="middle" transform="rotate(-90 40 350)">9,8 М</text>
+
+              <g class="plan__walls">
+                <path d="M90 90H550V610H260M200 610H90V90"/>
+                <path d="M350 90V470M350 510V610"/>
+                <path d="M90 310H180M220 310H350"/>
+                <path d="M350 390H380M420 390H550"/>
+                <path d="M450 390V470M450 510V610"/>
+              </g>
+
+              <g class="plan__furn">
+                <path d="M90 124H350M90 90V124"/>
+                <rect x="150" y="210" width="110" height="44"/>
+                <rect x="110" y="470" width="130" height="52"/>
+                <path d="M110 496h130"/>
+                <rect x="160" y="545" width="60" height="30"/>
+                <rect x="390" y="110" width="130" height="190"/>
+                <path d="M390 150h130"/>
+                <rect x="358" y="110" width="24" height="34"/>
+                <rect x="528" y="110" width="22" height="34"/>
+                <rect x="458" y="404" width="82" height="46"/>
+                <rect x="458" y="462" width="40" height="26"/>
+              </g>
+
+              <g class="plan__labels">
+                <text class="plan__label" x="220" y="176" text-anchor="middle">Кухня</text>
+                <text class="plan__area" x="220" y="190" text-anchor="middle">24 м²</text>
+
+                <text class="plan__label" x="220" y="340" text-anchor="middle">Гостиная</text>
+                <text class="plan__area" x="220" y="354" text-anchor="middle">62 м²</text>
+
+                <text class="plan__label" x="450" y="332" text-anchor="middle">Спальня</text>
+                <text class="plan__area" x="450" y="346" text-anchor="middle">54 м²</text>
+
+                <text class="plan__label" x="400" y="560" text-anchor="middle">Холл</text>
+                <text class="plan__area" x="400" y="574" text-anchor="middle">22 м²</text>
+
+                <text class="plan__label" x="500" y="580" text-anchor="middle">Ванная</text>
+                <text class="plan__area" x="500" y="594" text-anchor="middle">14 м²</text>
+
+                <text class="plan__label" x="320" y="652" text-anchor="middle">Терраса</text>
+                <text class="plan__area" x="320" y="666" text-anchor="middle">42 м²</text>
+              </g>
+
+              <g class="plan__terrace">
+                <path d="M90 610H550V690H90Z"/>
+              </g>
+
+              <g class="plan__mark">
+                <circle cx="200" cy="420" r="10"/>
+                <circle cx="200" cy="420" r="3.5"/>
+                <text class="plan__mark-text" x="216" y="423">ВЫБОР AURA · 07</text>
+              </g>
+            </svg>
+          </div>
+
+          <figcaption class="plan__cap">
+            <div>
+              <span class="plan__tag num">Каталог · 07</span>
+              <span class="plan__name">Пентхаус, Пречистенка</span>
+            </div>
+            <div class="plan__right">
+              <span class="plan__meta num">218 м² · 4 комнаты · терраса 42 м²</span>
+              <span class="plan__price num">285 млн ₽</span>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="stats surface-ink" aria-label="Aura в цифрах">
+      <div class="container">
+        <div class="stats__head">
+          <p class="kicker"><span class="dot" aria-hidden="true"></span>(01) Aura в цифрах</p>
+          <p class="stats__note num">По сделкам агентства за 2025 год</p>
+        </div>
+
+        <div class="stats__grid">
+          <div class="stat" data-reveal style="--i:0">
+            <p class="stat__num">214</p>
+            <p class="stat__label">объектов в закрытом каталоге</p>
+          </div>
+          <div class="stat" data-reveal style="--i:1">
+            <p class="stat__num">38</p>
+            <p class="stat__label">дней от заявки до ключей</p>
+          </div>
+          <div class="stat" data-reveal style="--i:2">
+            <p class="stat__num">12</p>
+            <p class="stat__label">лет на московском рынке</p>
+          </div>
+          <div class="stat" data-reveal style="--i:3">
+            <p class="stat__num">82%</p>
+            <p class="stat__label">клиентов приходят по рекомендации</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why surface-paper" id="approach" aria-labelledby="why-title">
+      <div class="container">
+        <div class="sec-head">
+          <p class="kicker"><span class="dot" aria-hidden="true"></span>(02) Почему Aura</p>
+          <h2 class="sec-head__title display" id="why-title">Сделка начинается с документов.</h2>
+          <p class="sec-head__lead">Юрист читает выписки, историю перехода права и проектную документацию дома до того, как вы увидите объект.</p>
+        </div>
+
+        <div class="bento">
+          <article class="card card--a surface-ink" data-reveal style="--i:0">
+            <p class="card__kicker">01 / Проверка</p>
+            <h3 class="card__title">Проверяем объект до показа.</h3>
+            <p class="card__text">Документы читает юрист агентства. Если в них есть вопрос, вы узнаёте о нём до просмотра.</p>
+            <ul class="card__list">
+              <li><span>Выписка ЕГРН</span><span class="num">01</span></li>
+              <li><span>Обременения</span><span class="num">02</span></li>
+              <li><span>История права</span><span class="num">03</span></li>
+              <li><span>Долги по дому</span><span class="num">04</span></li>
+              <li><span>Судебные споры</span><span class="num">05</span></li>
+            </ul>
+          </article>
+
+          <article class="card card--b surface-accent" data-reveal style="--i:1">
+            <p class="card__kicker">02 / Торг</p>
+            <p class="card__big num">6,4%</p>
+            <p class="card__text">средняя скидка по сделкам агентства за 2025 год. Торгуемся с продавцом от вашего имени.</p>
+          </article>
+
+          <article class="card card--c" data-reveal style="--i:2">
+            <p class="card__kicker">03 / Люди</p>
+            <h3 class="card__title">Один менеджер.</h3>
+            <p class="card__text">Ведёт сделку от заявки до ключей. Не передаёт вас коллеге после подписания договора.</p>
+          </article>
+
+          <article class="card card--d" data-reveal style="--i:3">
+            <p class="card__kicker">04 / После</p>
+            <h3 class="card__title">После ключей.</h3>
+            <p class="card__text">Помогаем с ремонтом, мебелью и управлением домом. Первый год ведём объект без комиссии.</p>
+            <ul class="card__list">
+              <li><span>Ремонт</span><span class="num">01</span></li>
+              <li><span>Мебель</span><span class="num">02</span></li>
+              <li><span>Аренда</span><span class="num">03</span></li>
+              <li><span>Платежи</span><span class="num">04</span></li>
+            </ul>
+          </article>
+
+          <article class="card card--e" data-reveal style="--i:4">
+            <p class="card__kicker">05 / Деньги</p>
+            <h3 class="card__title">Гонорар известен заранее.</h3>
+            <p class="card__text">1,5% от стоимости объекта. Сумму фиксируем в договоре до первого показа, без доплат по ходу сделки.</p>
+            <p class="card__price-row"><span>Минимальный гонорар</span><span class="num">350 000 ₽</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services surface-mist" id="services" aria-labelledby="svc-title">
+      <div class="container">
+        <div class="sec-head">
+          <p class="kicker"><span class="dot" aria-hidden="true"></span>(03) Услуги</p>
+          <h2 class="sec-head__title display" id="svc-title">Что входит в работу.</h2>
+          <p class="sec-head__lead">Берём задачу целиком или отдельную часть. Стоимость фиксируем в договоре до начала работы.</p>
+        </div>
+
+        <div class="svc-list">
+          <article class="svc" data-reveal style="--i:0">
+            <span class="svc__num num">01</span>
+            <h3 class="svc__name">Подбор объекта</h3>
+            <p class="svc__desc">Шорт-лист из закрытого каталога под бюджет, район и состав семьи. Показываем 3–5 объектов, которые прошли проверку.</p>
+            <p class="svc__price num">входит в гонорар</p>
+          </article>
+          <article class="svc" data-reveal style="--i:1">
+            <span class="svc__num num">02</span>
+            <h3 class="svc__name">Проверка юридической чистоты</h3>
+            <p class="svc__desc">ЕГРН, обременения, история права, проектная документация, долги и судебные споры.</p>
+            <p class="svc__price num">входит в гонорар</p>
+          </article>
+          <article class="svc" data-reveal style="--i:2">
+            <span class="svc__num num">03</span>
+            <h3 class="svc__name">Торг и сделка</h3>
+            <p class="svc__desc">Переговоры с продавцом, банком и нотариусом. Сопровождаем расчёты и передачу ключей.</p>
+            <p class="svc__price num">1,5% от стоимости</p>
+          </article>
+          <article class="svc" data-reveal style="--i:3">
+            <span class="svc__num num">04</span>
+            <h3 class="svc__name">Загородные дома</h3>
+            <p class="svc__desc">Подбор и проверка домов в 30 км от МКАД: участок, коммуникации, подъезд, границы.</p>
+            <p class="svc__price num">1,5% от стоимости</p>
+          </article>
+          <article class="svc" data-reveal style="--i:4">
+            <span class="svc__num num">05</span>
+            <h3 class="svc__name">Управление недвижимостью</h3>
+            <p class="svc__desc">Аренда, ремонт, коммунальные платежи и отчётность для владельца.</p>
+            <p class="svc__price num">от 80 000 ₽/мес</p>
+          </article>
+          <article class="svc" data-reveal style="--i:5">
+            <span class="svc__num num">06</span>
+            <h3 class="svc__name">Оценка</h3>
+            <p class="svc__desc">Рыночная оценка квартиры или дома для продажи, залога или раздела.</p>
+            <p class="svc__price num">45 000 ₽</p>
+          </article>
+        </div>
+        <p class="svc-note">Гонорар 1,5% от стоимости объекта, минимум 350 000 ₽. Для покупателя подбор и проверка входят в гонорар.</p>
+      </div>
+    </section>
+
+    <section class="request surface-paper" id="request" aria-labelledby="req-title">
+      <div class="container">
+        <div class="request__grid">
+          <div class="request__copy">
+            <p class="kicker"><span class="dot" aria-hidden="true"></span>(04) Заявка</p>
+            <h2 class="request__title display" id="req-title">Расскажите, что ищете.</h2>
+            <p class="request__lead">Перезвоним в течение 15 минут в рабочее время. Подготовим 3–5 объектов и юриста к первому разговору.</p>
+
+            <ol class="steps">
+              <li>
+                <span class="steps__num num">01</span>
+                <div>
+                  <h3>Разговор</h3>
+                  <p>15 минут: бюджет, район, срок.</p>
+                </div>
+              </li>
+              <li>
+                <span class="steps__num num">02</span>
+                <div>
+                  <h3>Шорт-лист</h3>
+                  <p>3–5 объектов с проверенными документами.</p>
+                </div>
+              </li>
+              <li>
+                <span class="steps__num num">03</span>
+                <div>
+                  <h3>Показ</h3>
+                  <p>Согласуем время и приедем вместе.</p>
+                </div>
+              </li>
+            </ol>
+
+            <p class="request__alt">Или позвоните: <a href="tel:+74951204090">+7 495 120-40-90</a>. Ежедневно, 10:00–20:00.</p>
+          </div>
+
+          <div class="form-card surface-ink" data-reveal style="--i:0">
+            <p class="form-card__kicker num">Заявка на подбор</p>
+
+            <form class="form" id="lead-form" novalidate>
+              <div class="field">
+                <label for="name">Имя</label>
+                <input class="input" id="name" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" required aria-describedby="name-error">
+                <p class="field__error" id="name-error">Укажите имя.</p>
+              </div>
+
+              <div class="field">
+                <label for="phone">Телефон</label>
+                <input class="input" id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7 999 000-00-00" required aria-describedby="phone-error">
+                <p class="field__error" id="phone-error">Введите телефон в формате +7 999 000-00-00.</p>
+              </div>
+
+              <div class="field-row">
+                <div class="field">
+                  <label for="interest">Что ищете</label>
+                  <div class="select-wrap">
+                    <select class="select" id="interest" name="interest">
+                      <option>Квартира</option>
+                      <option>Пентхаус</option>
+                      <option>Загородный дом</option>
+                      <option>Инвестиции</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="budget">Бюджет</label>
+                  <div class="select-wrap">
+                    <select class="select" id="budget" name="budget">
+                      <option>До 50 млн ₽</option>
+                      <option>50–100 млн ₽</option>
+                      <option>100–200 млн ₽</option>
+                      <option>От 200 млн ₽</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="message">Комментарий <span class="field__opt">необязательно</span></label>
+                <textarea class="textarea" id="message" name="message" rows="3" placeholder="Район, срок, особые условия"></textarea>
+              </div>
+
+              <div class="consent">
+                <input id="consent" name="consent" type="checkbox" required aria-describedby="consent-error">
+                <div>
+                  <label for="consent">Согласен на обработку персональных данных</label>
+                  <button class="link" type="button" data-open-privacy>Политика</button>
+                  <p class="field__error" id="consent-error">Подтвердите согласие.</p>
+                </div>
+              </div>
+
+              <button class="btn btn--wide" type="submit" id="submit">Отправить заявку</button>
+              <p class="form__note">Работаем по договору, без предоплаты.</p>
+            </form>
+
+            <div class="success" id="form-success" hidden tabindex="-1">
+              <p class="success__title display">Заявка принята.</p>
+              <p class="success__text">Перезвоним в течение 15 минут в рабочее время. Если вопрос срочный, звоните: <a href="tel:+74951204090">+7 495 120-40-90</a>.</p>
+              <button class="btn btn--ghost" type="button" id="success-reset">Отправить ещё</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer surface-ink" id="contacts">
+    <div class="container">
+      <p class="footer__word fit"><span class="fit__line">Aura Estate<span class="pink">.</span></span></p>
+
+      <div class="footer__cols">
+        <div class="fcol">
+          <p class="fcol__k num">Офис</p>
+          <p>Москва, Пречистенская наб., 15,<br>офис 4</p>
+        </div>
+        <div class="fcol">
+          <p class="fcol__k num">Часы</p>
+          <p>Пн–Сб, 10:00–20:00<br>Вс, по договорённости</p>
+        </div>
+        <div class="fcol">
+          <p class="fcol__k num">Связь</p>
+          <p><a href="tel:+74951204090">+7 495 120-40-90</a><br><a href="mailto:hello@aura-estate.ru">hello@aura-estate.ru</a></p>
+        </div>
+        <div class="fcol">
+          <p class="fcol__k num">Разделы</p>
+          <p><a href="#approach">Подход</a><br><a href="#services">Услуги</a><br><a href="#request">Заявка</a></p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="num">© <span data-year>2026</span> Aura Estate</p>
+        <button class="link num" type="button" data-open-privacy>Политика конфиденциальности</button>
+        <a class="footer__up num" href="#top">Наверх <span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="modal" id="privacy" aria-labelledby="privacy-title">
+    <div class="modal__in surface-paper">
+      <button class="modal__close" type="button" data-close-privacy aria-label="Закрыть">
+        <span></span><span></span>
+      </button>
+      <h2 class="modal__title display" id="privacy-title">Политика обработки данных</h2>
+      <div class="modal__body">
+        <p>Данные из формы (имя, телефон, комментарий) нужны, чтобы ответить на заявку и подготовить подборку объектов. Мы не передаём их третьим лицам и не используем для рассылок без отдельного согласия.</p>
+        <p>Чтобы отозвать заявку, напишите на <a href="mailto:hello@aura-estate.ru">hello@aura-estate.ru</a>.</p>
+        <p>Оператор: Aura Estate, Москва, Пречистенская наб., 15.</p>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
