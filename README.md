@@ -63,6 +63,6 @@ pics/               скриншоты проверки, в git не входя�
 
 ## Деплой
 
-Vercel → Add New → Project → Import Git Repository. Framework Preset: `Other`. Build Command: пусто. Output Directory: `.`. Сборка не нужна, `index.html` лежит в корне.
+GitHub Pages: ветка `main`, папка `/` (root). Settings → Pages → Build and deployment → Deploy from a branch → `main` / `(root)`. Адрес: https://winteri9.github.io/aura-estate/. Сборка не нужна, `index.html` лежит в корне, `.nojekyll` отключает Jekyll.
 
 Лицензии шрифтов: Prata, Golos Text и Martian Mono распространяются по SIL Open Font License 1.1.
