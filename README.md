@@ -15,7 +15,7 @@ py -3.13 -m http.server 8123
 ```
 index.html          разметка и инлайн-план квартиры
 style.css           токены, поверхности, компоненты, адаптив
-script.js           меню, появление блоков, магнитная кнопка, форма
+script.js           меню, появление блоков, GSAP-анимация hero, магнитная кнопка, форма
 assets/fonts/       Prata, Golos Text, Martian Mono (woff2, OFL)
 assets/favicon.svg
 pics/               скриншоты проверки, в git не входят
@@ -55,6 +55,7 @@ pics/               скриншоты проверки, в git не входя�
 - 1440, 1024, 768 и 390 px: `scrollWidth` равен `innerWidth`, горизонтального скролла нет.
 - `document.fonts.check` для Prata, Golos Text и Martian Mono возвращает `true`.
 - `prefers-reduced-motion: reduce` отключает движение, контент остаётся видимым.
+- GSAP 3.12.5 + ScrollTrigger с CDN: вход заголовка hero (сдвиг + opacity) и параллакс плана; при reduced motion твины не запускаются.
 - Без JS заголовок и блоки видны: скрытие включает только класс `js`.
 - Форма: пустая отправка показывает три ошибки и ставит фокус в первое поле; валидная показывает экран успеха.
 - Меню и диалог политики: `inert`, `aria-expanded`, возврат фокуса, Escape.

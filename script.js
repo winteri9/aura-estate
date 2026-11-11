@@ -12,8 +12,34 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
+  function initHeroMotion() {
+    if (!window.gsap || !window.ScrollTrigger || reduceMotion.matches) return;
+    html.classList.add('gsap-motion');
+    gsap.registerPlugin(ScrollTrigger);
+
+    var lines = gsap.utils.toArray('.hero__line > span');
+    gsap.set(lines, { y: 0, yPercent: 110, opacity: 0 });
+    gsap.to(lines, {
+      y: 0,
+      yPercent: 0,
+      opacity: 1,
+      duration: 0.95,
+      ease: 'power3.out',
+      stagger: 0.09,
+      scrollTrigger: { trigger: '.hero', start: 'top 82%', once: true }
+    });
+
+    gsap.to('.plan', {
+      yPercent: 7,
+      ease: 'none',
+      scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 0.7 }
+    });
+  }
+
   var reveal = function () {
+    initHeroMotion();
     html.classList.add('is-ready');
+    if (window.ScrollTrigger) window.ScrollTrigger.refresh();
   };
   if (document.fonts && document.fonts.ready) {
     var fontTimer = window.setTimeout(reveal, 600);
