@@ -1338,7 +1338,7 @@ svg {
 }
 .footer__cols {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   padding-top: 26px;
   border-top: 1px solid var(--hairline);
@@ -1365,19 +1365,6 @@ svg {
 .fcol__note {
   color: var(--fg-muted);
   font-size: 11px;
-}
-.fcol__ext {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-.fcol__ext span {
-  color: var(--pink);
-  font-size: 12px;
-  transition: transform var(--dur-2) var(--ease-out);
-}
-.fcol__ext:hover span {
-  transform: translate(2px, -2px);
 }
 
 @media (max-width: 1024px) {
